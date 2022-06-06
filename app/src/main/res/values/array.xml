@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="test_list">
+        <item>Linearlayout</item>
+        <item>RelativeLayout</item>
+        <item>TableLayout</item>
+        <item>AbsoluteLayout</item>
+        <item>FrameLayout</item>
+        <item>ConstraintLayout</item>
+    </string-array>
+</resources>
