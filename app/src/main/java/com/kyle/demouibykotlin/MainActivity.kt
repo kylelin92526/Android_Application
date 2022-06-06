@@ -9,6 +9,9 @@ import android.widget.ArrayAdapter
 import android.widget.ListView
 import androidx.appcompat.app.AppCompatActivity
 
+/*
+ 主要請參照 xml 檔設置
+ */
 
 class MainActivity : AppCompatActivity(){
     lateinit var arraylist:Array<String>
