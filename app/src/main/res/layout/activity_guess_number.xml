@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.GuessNumberViewActivity">
+
+    <!-- <fragment
+        android:id="@+id/settings_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+    /> -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:background="@drawable/background_gradient_black_0"
+        >
+
+        <ImageView
+            android:id="@+id/imageViewReplay"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:onClick="replayGame"
+            app:srcCompat="@drawable/item_replay"
+            />
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:text="計時　 :　0:0"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            />
+
+        <ImageView
+            android:id="@+id/imageViewSettings"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:onClick="settingsOnClick"
+            app:srcCompat="@drawable/item_settings" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        android:background="@drawable/background_gradient_lightgoldenrod_0"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/guess_number_listview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="42"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="#FFFF6F"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+
+        <TextView
+            android:id="@+id/textViewshow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:background="@drawable/background_gradient_yello_0"
+            android:text="顯示當前輸入"
+            android:gravity="center"
+         />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="45"
+        android:background="#000000"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:onClick="input"
+                android:background="@drawable/button_circle_sienna"
+                app:backgroundTint="#FF8247"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:onClick="input"
+                android:background="@drawable/button_circle_sienna"
+                app:backgroundTint="#FF8247"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:onClick="input"
+                android:background="@drawable/button_circle_sienna"
+                app:backgroundTint="#FF8247"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:onClick="input"
+                android:background="@drawable/button_circle_sienna"
+                app:backgroundTint="#FF8247"
+                android:text="4" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:onClick="input"
+                android:background="@drawable/button_circle_sienna"
+                app:backgroundTint="#FF8247"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:onClick="input"
+                android:background="@drawable/button_circle_sienna"
+                app:backgroundTint="#FF8247"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:onClick="input"
+                android:background="@drawable/button_circle_sienna"
+                app:backgroundTint="#FF8247"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:onClick="input"
+                android:background="@drawable/button_circle_sienna"
+                app:backgroundTint="#FF8247"
+                android:text="8" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:onClick="input"
+                android:background="@drawable/button_circle_sienna"
+                app:backgroundTint="#FF8247"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/button0"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:onClick="input"
+                android:background="@drawable/button_circle_sienna"
+                app:backgroundTint="#FF8247"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/buttondel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:onClick="delete"
+                android:background="@drawable/button_circle_sienna"
+                app:backgroundTint="#FF8247"
+                android:text="刪除" />
+
+            <Button
+                android:id="@+id/buttonclear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:onClick="clearAll"
+                android:background="@drawable/button_circle_sienna"
+                app:backgroundTint="#FF8247"
+                android:text="全部清除" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonsend"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="2"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:onClick="sendResult"
+                app:cornerRadius="25dp"
+                app:strokeColor="@color/white"
+                app:strokeWidth="3dp"
+                android:backgroundTint="#FFD700"
+                android:text="送出結果" />
+
+           <!-- <Button
+                android:id="@+id/buttonreplay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:onClick="replayGame"
+                app:cornerRadius="25dp"
+                app:strokeColor="@color/white"
+                app:strokeWidth="3dp"
+                android:backgroundTint="#EE82EE"
+                android:text="重新開始" /> -->
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
