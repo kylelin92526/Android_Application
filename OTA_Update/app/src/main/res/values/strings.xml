@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">System_Update</string>
+    <string name="show_start_infomation">Update System</string>
+    <string name="checking_ota">under inspection, please leave: %1$s</string>
+    <string name="message_select">select update  image path frist</string>
+    <string name="message_hint">When performing a system update , do not close the application , leave the power on and keep the battery fully charged</string>
+</resources>
